@@ -20,7 +20,7 @@ mail = Mail(app)
 @app.route("/")
 def index():
 	msg = Message('Hello',sender ='harishsidagam@gmail.com',
-				  recipients = ['harishsidagam@gmail.com','rsrraviteja3522.sr@gmail.com'])
+				  recipients = ['admin@gmail.com','user@gmail.com'])
 	msg.body = 'Hello  User This message is sending from sent from Flask-Mail. I created flask-application please go through once'
 	
 
