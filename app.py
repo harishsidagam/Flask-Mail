@@ -22,9 +22,7 @@ def index():
 	msg = Message('Hello',sender ='harishsidagam@gmail.com',
 				  recipients = ['harishsidagam@gmail.com','rsrraviteja3522.sr@gmail.com'])
 	msg.body = 'Hello  User This message is sending from sent from Flask-Mail. I created flask-application please go through once'
-	with app.open_resource("/Users/lenovo/OneDrive/Desktop/Resume.pdf") as fp:
-		if os.path.isfile('Resume.pdf'):
-			msg.attach('Resume.pdf','application/pdf',fp.read())
+	
 
 	mail.send(msg)
 	return 'Sent'
